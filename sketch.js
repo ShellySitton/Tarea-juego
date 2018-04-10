@@ -1,11 +1,11 @@
 /*
  *
  * CINEMA EXPANDIDO WEB
- * PIXEL ARRAY (13-03-18)
+ * PIXEL ARRAY 2 (13-03-18)
  * SHELLY SITTON
  * 
  *
- * URL
+ * URL:  https://shellysitton.github.io/CEW_pixelArray2/
  */
 
 
@@ -30,7 +30,9 @@
 function windowResized(){
   resizeCanvas(windowWidth,windowHeight);
   
-  
+}
+function preload(){
+ video=createVideo("assets/videos/h.mov"); 
 }
 
 function setup() {
@@ -58,7 +60,7 @@ function draw() {
  */
  
  function initializeVideo(){
-  video=createVideo("assets/videos/h.mov");
+  
   video.loop();
   video.hide();
    
